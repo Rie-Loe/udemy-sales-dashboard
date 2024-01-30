@@ -51,3 +51,7 @@ ALTER TABLE business_courses
 ALTER COLUMN published_timestamp_date DATE;
 
 
+-- Rename Rating column of each table
+EXEC sp_rename 'web_development_courses.Rating', 'rating', 'COLUMN';
+
+
