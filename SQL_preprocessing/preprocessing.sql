@@ -55,3 +55,31 @@ ALTER COLUMN published_timestamp_date DATE;
 EXEC sp_rename 'web_development_courses.Rating', 'rating', 'COLUMN';
 
 
+-- Add new subject column in each table
+ALTER TABLE web_development_courses
+ADD subject VARCHAR(500);
+
+UPDATE design_courses
+SET [subject] = 'graphics_design';
+
+
+-- Combine all tables to create final dataset to be used
+SELECT * INTO udemy_courses
+FROM
+(
+	SELECT * FROM business_courses
+	UNION 
+	SELECT * FROM design_courses
+	UNION 
+	SELECT * FROM music_courses
+	UNION 
+	SELECT * FROM web_development_courses
+) AS combined_data;
+
+
+-- Add new column - revenue
+ALTER TABLE udemy_courses
+ADD revenue NUMERIC(10,2) 
+
+UPDATE udemy_courses
+SET revenue = price * num_subscribers;
