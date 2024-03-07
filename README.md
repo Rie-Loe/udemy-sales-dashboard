@@ -1,10 +1,11 @@
 # Udemy Sales Dashboard
-![image](https://github.com/Rie-Loe/udemy-sales-dashboard/assets/84235495/c1079368-2af1-444d-b8ee-9dfd351eab40)
 
 ### Project description
 This project centers on data visualization, which aims to reveal hidden insights within various Udemy course topics such as Business, Web Development, Music, and Graphics Design. The objective is to analyze the courses' performance and identify opportunities for revenue growth. 
 
-_*Note #1: I will be working on a more comprehensive article that focuses on the challenges I've encountered and the workarounds I implemented to overcome them in this project._ <br><br>
+![image](https://github.com/Rie-Loe/udemy-sales-dashboard/assets/84235495/c1079368-2af1-444d-b8ee-9dfd351eab40)
+
+_*Note #1: I will be working on a more comprehensive article that focuses on the challenges I've encountered and the workarounds I implemented to overcome them while working on this project._ <br><br>
 
 ### Tasks performed 
 ##### 1. Data Cleaning
